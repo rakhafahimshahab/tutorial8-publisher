@@ -8,3 +8,8 @@ This URL points to the AMQP server running on the local machine using the defaul
 ## Message Broker with RabbitMQ
 ### Running RabbitMQ as message broker
 <img src="image/image0.png">
+
+### Sending and Processing Event
+<img src="image/image1.png">
+
+When a message broker like RabbitMQ is operational, and we run our Subscriber and Publisher programs (using cargo run), the Publisher sends data to the message broker, which is then received by the Subscriber. In the image above, we can see that the Publisher sends data once to the message broker, and the Subscriber receives it.

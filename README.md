@@ -13,3 +13,8 @@ This URL points to the AMQP server running on the local machine using the defaul
 <img src="image/image1.png">
 
 When a message broker like RabbitMQ is operational, and we run our Subscriber and Publisher programs (using cargo run), the Publisher sends data to the message broker, which is then received by the Subscriber. In the image above, we can see that the Publisher sends data once to the message broker, and the Subscriber receives it.
+
+### Monitoring chart based on publisher
+<img src="image/image2.png">
+
+In the image above, I attempted to run the Publisher multiple times, which increased the message rates, and then after a few seconds, I tried running it twice more with a longer interval between runs. From this, I understand that the message rates increase when the Publisher sends data to the message broker. If the message rates are high, the message broker will receive a lot of data from the Publisher.
